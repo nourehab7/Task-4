@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --mainBlue: #02A3F1;
+    --mainGreen: #7FBA00;
+    --mainOrange: #F25123;
+    --fontColor1: white;
+    --fontColor2: rgba(0, 0, 0, 0.5);
+    --Padding: 70px;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--Padding);
+}
+
+nav .navigations .items {
+    color: var(--fontColor1);
+
+}
+
+nav .navigations {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav .navigations .items ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav .navigations .items ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav .login button {
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: 600;
+
+}
+
+nav .login svg {
+    cursor: pointer;
+    fill: white;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+@media (max-width:750px) {
+    nav .navigations .items{
+        display: none;
+    }
+    nav .login button {
+        display: none;
+    }
+
+    nav .login svg {
+        display: block;
+    }
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    left: -100%;
+    position: fixed;
+    background-image: url(../images/background_blur.png);
+    background-size: cover;
+    padding: 30px;
+    transition: all 0.5s linear;
+    display: none;
+}
+
+.menu .bar {
+    display: flex;
+    justify-content: space-between;
+margin-bottom: 30px;
+}
+
+.menu .bar .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.menu .bar .logo .logoPic img{
+    width:60px;
+}
+.menu .bar .close svg {
+    fill: white;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.menu .bar .logo .info h1 {
+    color: var(--fontColor1);
+    font-size: 16px;
+}
+
+.menu .bar .logo .info p {
+    color: rgba(225, 225, 225, 0.5);
+    font-size:12px;
+}
+
+.menu section ul li {
+    list-style: none;
+    font-size: 30px;
+    color: var(--fontColor1);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu section .login {
+    color: var(--mainOrange);
+    border-top: 5px solid var(--mainOrange);
+    width: fit-content;
+    width: 70%;
+    font-size: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}

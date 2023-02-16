@@ -1,0 +1,90 @@
+.home{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: var(--Padding);
+}
+.home .info h1{
+    font-size: 90px;
+    font-weight: 100;
+}
+.home .info p{
+    font-weight: 900;
+}
+.home .info .searchContainer{
+    background-image: url(../images/background_blur.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:10px 20px;
+    border-radius: 30px;
+}
+.home .info .searchContainer input{
+    width:100%;
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: 20px;
+
+}
+.home .info .searchContainer input:focus{
+   outline: none;
+}
+.home .info .searchContainer svg {
+width: 30px;
+height: 30px;
+}
+.home .info .searchContainer svg:first-child{
+    fill: rgba(225,225,225,0.25);
+}
+.home .info .searchContainer svg:nth-child(3){
+    fill:var(--mainOrange);
+    width: 40px;
+height: 40px;
+}
+.home .info .people{
+    display:flex;
+}
+.home .info .people .peopleInfo{
+   
+    display:flex;
+}
+
+.home .info .people .peoplePics{
+    display: flex;
+    
+}
+.home .info .people .peoplePics div{
+width: 90px;
+height: 90px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+}
+.home .info .people .peoplePics div:first-child{
+    border: 5px solid var(--mainBlue);
+    background-image: url(../images/people/pexels-marcio-bordin-1840608\ \(1\).jpg);
+    z-index: 4;
+}
+.home .info .people .peoplePics div:nth-child(2){
+    border: 5px solid var(--mainGreen);
+    background-image: url(../images/people/pexels-lola-russian-1855582.jpg);
+    margin-left: -20px;
+    z-index: 3;
+}
+.home .info .people .peoplePics div:nth-child(3){
+    background-image: url(../images/people/pexels-steshka-willems-1806905.jpg);
+    border: 5px solid white;
+    margin-left: -20px;
+    z-index: 2;
+}
+.home .info .people .peoplePics div:nth-child(4){
+    background-image: url(../images/people/pexels-rein-krijgsman-3139612.jpg);
+    border: 5px solid var(--mainOrange);
+    margin-left: -20px;
+    z-index: 1;
+}
+
+
+
